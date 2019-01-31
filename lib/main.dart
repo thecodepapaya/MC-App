@@ -22,10 +22,16 @@ class McApp extends StatefulWidget {
 }
 
 class _State extends State<McApp> {
-  void playSound() {
+  void playSoundMC() {
     setState(() {
       AudioCache player = new AudioCache();
       player.play('yash_audio.ogg');
+    });
+  }
+  void playSoundBB(){
+    setState(() {
+      AudioCache player = new AudioCache();
+      player.play('Yash_BB.ogg');
     });
   }
 
@@ -43,8 +49,12 @@ class _State extends State<McApp> {
             children: <Widget>[
               RaisedButton(
                 child: Text("Press me :)"),
-                onPressed: playSound,
+                onPressed: playSoundMC,
               ),
+               RaisedButton(
+                 child: Text("Press me too :)"),
+                 onPressed: playSoundBB,
+               )
             ],
           ),
         ),
