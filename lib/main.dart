@@ -36,13 +36,18 @@ class _State extends State<McApp> {
         title: Text("MC App"),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text("Press the Floating Action button ;)"),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: playSound,
-        tooltip: 'Yash_MC',
-        child: Icon(Icons.volume_up),
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              RaisedButton(
+                child: Text("Press me :)"),
+                onPressed: playSound,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
