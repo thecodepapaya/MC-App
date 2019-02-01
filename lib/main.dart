@@ -60,7 +60,7 @@ class _State extends State<McApp> {
       body: Container(
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               RaisedButton(
                 child: Text("Press me :)"),
