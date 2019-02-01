@@ -41,6 +41,8 @@ flutter:
   assets:
    - assets/yash_audio.ogg
    - assets/Yash_BB.ogg
+   - assets/Ajay_audio.mp4
+   - assets/Anvay_ninda.ogg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

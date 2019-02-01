@@ -28,10 +28,25 @@ class _State extends State<McApp> {
       player.play('yash_audio.ogg');
     });
   }
-  void playSoundBB(){
+
+  void playSoundBB() {
     setState(() {
       AudioCache player = new AudioCache();
       player.play('Yash_BB.ogg');
+    });
+  }
+
+  void playSoundAN() {
+    setState(() {
+      AudioCache player = new AudioCache();
+      player.play('Ajay_audio.mp4');
+    });
+  }
+
+  void playSoundNJ() {
+    setState(() {
+      AudioCache player = new AudioCache();
+      player.play('Anvay_ninda.ogg');
     });
   }
 
@@ -51,10 +66,18 @@ class _State extends State<McApp> {
                 child: Text("Press me :)"),
                 onPressed: playSoundMC,
               ),
-               RaisedButton(
-                 child: Text("Press me too :)"),
-                 onPressed: playSoundBB,
-               )
+              RaisedButton(
+                child: Text("Press me too :)"),
+                onPressed: playSoundBB,
+              ),
+              RaisedButton(
+                child: Text("Njay Aath"),
+                onPressed: playSoundAN,
+              ),
+              RaisedButton(
+                child: Text("Ninda Janak"),
+                onPressed: playSoundNJ,
+              )
             ],
           ),
         ),
