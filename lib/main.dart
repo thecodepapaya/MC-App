@@ -77,7 +77,7 @@ class _State extends State<McApp> {
               RaisedButton(
                 child: Text("Ninda Janak"),
                 onPressed: playSoundNJ,
-              )
+              ),
             ],
           ),
         ),
