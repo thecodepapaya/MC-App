@@ -9,7 +9,7 @@ class Mc extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.green,
       ),
       home: McApp(),
     );
@@ -57,30 +57,32 @@ class _State extends State<McApp> {
         title: Text("MC App"),
         centerTitle: true,
       ),
-      body: Container(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              RaisedButton(
-                child: Text("Press me :)"),
-                onPressed: playSoundMC,
-              ),
-              RaisedButton(
-                child: Text("Press me too :)"),
-                onPressed: playSoundBB,
-              ),
-              RaisedButton(
-                child: Text("Njay Aath"),
-                onPressed: playSoundAN,
-              ),
-              RaisedButton(
-                child: Text("Ninda Janak"),
-                onPressed: playSoundNJ,
-              ),
-            ],
+      body: GridView.count(
+        primary: false,
+        padding: const EdgeInsets.all(20.0),
+        crossAxisSpacing: 20.0,
+        mainAxisSpacing: 20.0,
+        crossAxisCount: 2,
+        children: <Widget>[
+          RaisedButton(
+            child: Text("Press me :)"),
+            color: Colors.lightBlue,
+            highlightElevation: 10,
+            onPressed: playSoundMC,
           ),
-        ),
+          RaisedButton(
+            child: Text("Press me too :)"),
+            onPressed: playSoundBB,
+          ),
+          RaisedButton(
+            child: Text("Njay Aath"),
+            onPressed: playSoundAN,
+          ),
+          RaisedButton(
+            child: Text("Kadi Ninda"),
+            onPressed: playSoundNJ,
+          ),
+        ],
       ),
     );
   }
