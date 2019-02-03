@@ -50,6 +50,20 @@ class _State extends State<McApp> {
     });
   }
 
+  void playSoundGF() {
+    setState(() {
+      AudioCache player = new AudioCache();
+      player.play('Yash_GF.mp3');
+    });
+  }
+
+  void playSoundSaiyan() {
+    setState(() {
+      AudioCache player = new AudioCache();
+      player.play('Yash_saiyan.mp3');
+    });
+  }
+
   void changeScreen() {
     Navigator.push(
       context,
@@ -69,14 +83,22 @@ class _State extends State<McApp> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Text("An empty Drawer"),
+           /*   children: Text("An empty Drawer"),
               decoration: BoxDecoration(
                 color: Colors.green,
-              ),
+                
+              ),*/
+              child: Image.asset('assets/icon/yash_face-removebg.png'),
             ),
             ListTile(
-              title: Text("Hello List"),
+              title: Text("About us "),
               onTap: changeScreen,
+            ),
+            ListTile(
+              enabled: true,
+              title: Text("Made with 🤬 by"),
+              subtitle: Text("bLaCkLiGhT"),
+
             ),
           ],
         ),
@@ -106,6 +128,14 @@ class _State extends State<McApp> {
             child: Text("Kadi Ninda"),
             onPressed: playSoundNJ,
           ),
+          RaisedButton(
+            child: Text("Ga*d Fulao"),
+            onPressed: playSoundGF,
+          ),
+          RaisedButton(
+            child: Text("Saiyan"),
+            onPressed: playSoundSaiyan,
+          ),
         ],
       ),
     );
@@ -117,7 +147,7 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext ctxt) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Multi Page Application Page-2"),
+        title: new Text("Know us Better"),
       ),
       body: Center(
         child: Text("Another Page...!!!!!!"),

@@ -28,7 +28,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.7.0
 
 flutter_icons:
-  image_path: "assets/icon/yash_funny_icon.png"
+  image_path: "assets/icon/yash_face-removebg.png"
   android: true
   ios: true
 
@@ -49,6 +49,10 @@ flutter:
    - assets/Yash_BB.ogg
    - assets/Ajay_audio.mp4
    - assets/Anvay_ninda.ogg
+   - assets/Yash_GF.mp3
+   - assets/Yash_saiyan.mp3
+   - assets/icon/yash_face-removebg.png
+   - assets/icon/yash_funny_icon.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
