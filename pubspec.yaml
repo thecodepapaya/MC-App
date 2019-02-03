@@ -45,10 +45,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/yash_audio.ogg
-   - assets/Yash_BB.ogg
+   - assets/yash_audio.mp3
+   - assets/Yash_BB.mp3
    - assets/Ajay_audio.mp4
-   - assets/Anvay_ninda.ogg
+   - assets/Anvay_ninda.mp3
    - assets/Yash_GF.mp3
    - assets/Yash_saiyan.mp3
    - assets/icon/yash_face-removebg.png

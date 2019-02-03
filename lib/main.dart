@@ -25,14 +25,14 @@ class _State extends State<McApp> {
   void playSoundMC() {
     setState(() {
       AudioCache player = new AudioCache();
-      player.play('yash_audio.ogg');
+      player.play('yash_audio.mp3');
     });
   }
 
   void playSoundBB() {
     setState(() {
       AudioCache player = new AudioCache();
-      player.play('Yash_BB.ogg');
+      player.play('Yash_BB.mp3');
     });
   }
 
@@ -46,7 +46,7 @@ class _State extends State<McApp> {
   void playSoundNJ() {
     setState(() {
       AudioCache player = new AudioCache();
-      player.play('Anvay_ninda.ogg');
+      player.play('Anvay_ninda.mp3');
     });
   }
 
