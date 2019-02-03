@@ -10,7 +10,7 @@ class Mc extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
-        buttonColor: Colors.lightBlue,
+        buttonColor: Colors.lightBlueAccent,
       ),
       home: McApp(),
     );
@@ -93,8 +93,7 @@ class _State extends State<McApp> {
             DrawerHeader(
               /*   children: Text("An empty Drawer"),
               decoration: BoxDecoration(
-                color: Colors.green,
-                
+                color: Colors.green, 
               ),*/
               child: Image.asset('assets/icon/yash_face-removebg.png'),
             ),
@@ -118,7 +117,10 @@ class _State extends State<McApp> {
         crossAxisCount: 2,
         children: <Widget>[
           RaisedButton(
-            child: Text("MC"),
+            child: Image.asset(
+              'assets/icon/yash_face-removebg.png',
+              fit: BoxFit.fill,
+            ),
             shape: CircleBorder(),
             splashColor: Colors.black87,
             highlightElevation: 10,
@@ -203,7 +205,7 @@ class DoodleScreen extends StatelessWidget {
         ),
       ),
       body: Text(
-        "\n\nNew World!\n I'm sorry there's nothing here right now\n\n Please check back with us later. We aren't really sorry for this 🤪",
+        "\n\nHello Homosapiens!\n\n Well... there's nothing here right now\n\n Please check back with us later. We aren't really sorry for this 🤪",
         style: TextStyle(fontSize: 30),
         textAlign: TextAlign.center,
       ),
