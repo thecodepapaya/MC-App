@@ -50,6 +50,13 @@ class _State extends State<McApp> {
     });
   }
 
+  void changeScreen() {
+    Navigator.push(
+      context,
+      new MaterialPageRoute(builder: (context) => new SecondScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +76,8 @@ class _State extends State<McApp> {
             ),
             ListTile(
               title: Text("Hello List"),
-            )
+              onTap: changeScreen,
+            ),
           ],
         ),
       ),
@@ -99,6 +107,20 @@ class _State extends State<McApp> {
             onPressed: playSoundNJ,
           ),
         ],
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext ctxt) {
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("Multi Page Application Page-2"),
+      ),
+      body: Center(
+        child: Text("Another Page...!!!!!!"),
       ),
     );
   }
