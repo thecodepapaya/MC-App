@@ -57,6 +57,22 @@ class _State extends State<McApp> {
         title: Text("MC App"),
         centerTitle: true,
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Text("An empty Drawer"),
+              decoration: BoxDecoration(
+                color: Colors.green,
+              ),
+            ),
+            ListTile(
+              title: Text("Hello List"),
+            )
+          ],
+        ),
+      ),
       body: GridView.count(
         primary: false,
         padding: const EdgeInsets.all(20.0),
