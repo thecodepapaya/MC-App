@@ -28,7 +28,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.7.0
 
 flutter_icons:
-  image_path: "assets/icon/yash_face-removebg.png"
+  image_path: "assets/icon/yash_funny_icon.png"
   android: true
   ios: true
 
