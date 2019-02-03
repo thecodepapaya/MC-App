@@ -83,7 +83,7 @@ class _State extends State<McApp> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-           /*   children: Text("An empty Drawer"),
+              /*   children: Text("An empty Drawer"),
               decoration: BoxDecoration(
                 color: Colors.green,
                 
@@ -96,9 +96,8 @@ class _State extends State<McApp> {
             ),
             ListTile(
               enabled: true,
-              title: Text("Made with 🤬 by"),
+              title: Text("Made with ♥ by"),
               subtitle: Text("bLaCkLiGhT"),
-
             ),
           ],
         ),
@@ -150,8 +149,21 @@ class SecondScreen extends StatelessWidget {
         title: new Text("Know us Better"),
       ),
       body: Center(
-        child: Text("Another Page...!!!!!!"),
-      ),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "We are just a bunch of enthusiastic coders,programmers and meme developers who united for a common cause of saving the human race by developing all sorts of potentially useless apps.\n\n\n We also make some usefull apps but they mostly go unnoticed...\n\nDo you know about any of them?",
+            style: TextStyle(fontSize: 20.0),
+            textAlign: TextAlign.center,
+          ),
+          Text(
+            "\n\n\n\n\n\n\nMade with ♥ by bLaCkLiGhT",
+            style: TextStyle(fontSize: 10.0),
+            textAlign: TextAlign.end,
+          ),
+        ],
+      )),
     );
   }
 }
