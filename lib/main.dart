@@ -10,6 +10,7 @@ class Mc extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
+        buttonColor: Colors.lightBlue,
       ),
       home: McApp(),
     );
@@ -71,6 +72,13 @@ class _State extends State<McApp> {
     );
   }
 
+  void goToDoodle() {
+    Navigator.push(
+      context,
+      new MaterialPageRoute(builder: (context) => new DoodleScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,9 +103,9 @@ class _State extends State<McApp> {
               onTap: changeScreen,
             ),
             ListTile(
-              enabled: true,
               title: Text("Made with ♥ by"),
               subtitle: Text("bLaCkLiGhT"),
+              onTap: goToDoodle,
             ),
           ],
         ),
@@ -110,29 +118,45 @@ class _State extends State<McApp> {
         crossAxisCount: 2,
         children: <Widget>[
           RaisedButton(
-            child: Text("Press me :)"),
-            color: Colors.lightBlue,
+            child: Text("MC"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
             highlightElevation: 10,
             onPressed: playSoundMC,
           ),
           RaisedButton(
-            child: Text("Press me too :)"),
+            child: Text("Bhak"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
+            highlightElevation: 10,
             onPressed: playSoundBB,
           ),
           RaisedButton(
             child: Text("Njay Aath"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
+            highlightElevation: 10,
             onPressed: playSoundAN,
           ),
           RaisedButton(
             child: Text("Kadi Ninda"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
+            highlightElevation: 10,
             onPressed: playSoundNJ,
           ),
           RaisedButton(
             child: Text("Ga*d Fulao"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
+            highlightElevation: 10,
             onPressed: playSoundGF,
           ),
           RaisedButton(
             child: Text("Saiyan"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
+            highlightElevation: 10,
             onPressed: playSoundSaiyan,
           ),
         ],
@@ -153,7 +177,7 @@ class SecondScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            "We are just a bunch of enthusiastic coders,programmers and meme developers who united for a common cause of saving the human race by developing all sorts of potentially useless apps.\n\n\n We also make some usefull apps but they mostly go unnoticed...\n\nDo you know about any of them?",
+            "We are just a bunch of enthusiastic coders,programmers and meme developers who united for a common cause of saving the human race by developing all sorts of potentially useless apps.\n\n\nConsidering the fact that you've so patiently read this section we feel like we've been successful in our adventure.\n\nThank you for being alive!",
             style: TextStyle(fontSize: 20.0),
             textAlign: TextAlign.center,
           ),
@@ -164,6 +188,25 @@ class SecondScreen extends StatelessWidget {
           ),
         ],
       )),
+    );
+  }
+}
+
+class DoodleScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Title(
+          child: Text("New Window"),
+          color: Colors.green,
+        ),
+      ),
+      body: Text(
+        "\n\nNew World!\n I'm sorry there's nothing here right now\n\n Please check back with us later. We aren't really sorry for this 🤪",
+        style: TextStyle(fontSize: 30),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
