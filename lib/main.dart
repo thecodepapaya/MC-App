@@ -127,7 +127,7 @@ class _State extends State<McApp> {
             onPressed: playSoundMC,
           ),
           RaisedButton(
-            child: Text("Bhak"),
+            child: Image.asset('assets/icon/harsh_wtf.png'),
             shape: CircleBorder(),
             splashColor: Colors.black87,
             highlightElevation: 10,
