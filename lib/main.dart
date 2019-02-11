@@ -40,7 +40,7 @@ class _State extends State<McApp> {
   void playSoundAN() {
     setState(() {
       AudioCache player = new AudioCache();
-      player.play('Ajay_audio.mp4');
+      player.play('Ajay_audio.mp3');
     });
   }
 
@@ -79,6 +79,13 @@ class _State extends State<McApp> {
     );
   }
 
+  void showDisclaimer() {
+    Navigator.push(
+      context,
+      new MaterialPageRoute(builder: (context) => new DisclaimerScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,6 +112,10 @@ class _State extends State<McApp> {
               title: Text("Made with ♥ by"),
               subtitle: Text("bLaCkLiGhT"),
               onTap: goToDoodle,
+            ),
+            ListTile(
+              title: Text("Disclaimer"),
+              onTap: showDisclaimer,
             ),
           ],
         ),
@@ -207,6 +218,25 @@ class DoodleScreen extends StatelessWidget {
       body: Text(
         "\n\nHello Homosapiens!\n\n Well... there's nothing here right now\n\n Please check back with us later. We aren't really sorry for this 🤪",
         style: TextStyle(fontSize: 30),
+        textAlign: TextAlign.center,
+      ),
+    );
+  }
+}
+
+class DisclaimerScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Title(
+          child: Text("Disclaimer"),
+          color: Colors.green,
+        ),
+      ),
+      body: Text(
+        "\n\nThis app is built for entertainment purposes only. The developer is not responsible for any damage or trouble that the user may be encounter due to use of this app. We do not promote the use of vulgar language in any form, wheather physically or electronically.\n\nBy using this app you agree to the above said terms and conditions and all the liabilities shall now rest with the user ipso facto.",
+        style: TextStyle(fontSize: 25),
         textAlign: TextAlign.center,
       ),
     );
