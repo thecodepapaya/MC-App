@@ -235,7 +235,7 @@ class DisclaimerScreen extends StatelessWidget {
         ),
       ),
       body: Text(
-        "\n\nThis app is built for entertainment purposes only. The developer is not responsible for any damage or trouble that the user may be encounter due to use of this app. We do not promote the use of vulgar language in any form, wheather physically or electronically.\n\nBy using this app you agree to the above said terms and conditions and all the liabilities shall now rest with the user ipso facto.",
+        "\n\nThis app is built for entertainment purposes only. The developer is not responsible for any damage or trouble that the user may encounter due to use of this app. We do not promote the use of vulgar language in any form, whether physically or electronically.\n\nBy using this app you agree to the above said terms and conditions and all the liabilities shall now rest with the user ipso facto.",
         style: TextStyle(fontSize: 25),
         textAlign: TextAlign.center,
       ),
