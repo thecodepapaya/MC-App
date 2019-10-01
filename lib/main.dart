@@ -64,6 +64,12 @@ class _State extends State<McApp> {
       player.play('Yash_saiyan.mp3');
     });
   }
+  void chodumal() {
+    setState(() {
+      AudioCache player = new AudioCache();
+      player.play('Chodumal.mp3');
+    });
+  }
 
   void changeScreen() {
     Navigator.push(
@@ -171,6 +177,13 @@ class _State extends State<McApp> {
             splashColor: Colors.black87,
             highlightElevation: 10,
             onPressed: playSoundSaiyan,
+          ),
+          RaisedButton(
+            child: Text("Chodumal"),
+            shape: CircleBorder(),
+            splashColor: Colors.black87,
+            highlightElevation: 10,
+            onPressed: chodumal,
           ),
         ],
       ),
